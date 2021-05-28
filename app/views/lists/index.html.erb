@@ -1,6 +1,7 @@
+<li><%= link_to "add", new_list_path %></li>
 <ul>
   <% @lists.each do |list| %>
     <li><%= link_to list.name, list_path(list) %></li>
   <% end %>
 </ul>
-<li><%= link_to "add", new_list_path %></li>
+
